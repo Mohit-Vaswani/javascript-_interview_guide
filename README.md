@@ -1,2 +1,2 @@
-# javascript-_interview_guide
-A simple guide for javascript if you are preapring for javascript interviews.
+# Javascript Interview Guide
+A simple guide for javascript if you are preparing for javascript interviews.
