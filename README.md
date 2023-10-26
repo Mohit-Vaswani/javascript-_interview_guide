@@ -43,6 +43,7 @@ In the above example, there is an "outer" func and an "inner" func. When we are 
 In the 2nd Example, there are 2 ways to call the function
     
 1 -> By calling the outer function followed by bracket.
+
 2 -> By calling the outer function stored in a variable. This is more common than the other.
 
 Real Magic of closure
