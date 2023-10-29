@@ -119,3 +119,30 @@ Const Variables
       // Uncaught ReferenceError : Cannot access name before initialization
 
       const age = 21
+
+
+# Template Literals
+
+- Template literals allow us to use strings or variables in the form of string.
+- The introduction of template literals is one of the most loved features of ES-6
+- Before ES-6, we use single or double quotes to wrap a string literals and it offers limited function.
+
+Before Template literals
+
+    const name = "Mohit";
+    const age = 21;
+
+    const info = "My name is " + name + " and my age is " + age;
+
+    console.log(info)
+    // My name is mohit and my age is 21
+
+After Template literals
+
+    const name = "Mohit";
+    const age = 21;
+
+    const info_new = `My name is ${name} and my ${age} is age`;
+
+    console.log(info_new)
+    // My name is mohit and my age is 21
