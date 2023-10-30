@@ -146,3 +146,82 @@ After Template literals
 
     console.log(info_new)
     // My name is mohit and my age is 21
+
+
+# This Keyword
+
+- The 'this' keyword is a reference variable that refers to the object that is executing the current piece of code.
+
+      const mohit = {
+          name: "Mohit",
+          age: 21,
+          info(){
+              console.log(`My name is ${this.name}`)
+          }
+      }
+      mohit.info()
+      // My name is Mohit
+
+Different values
+
+The 'this' keyword has different values depending upon its use.
+
+- Used Alone
+- Used in Regular Function
+- Used in Object Method
+- Regular function in strict mode
+
+1. Used Alone
+
+- Whenever 'this' keyword is used alone, it always refers to the global window object.
+     
+       console.log(this);
+       /* Window { window: Window, self: Window,
+          document: document, name: '', location: Location..., ...}
+
+2. Used in Regular Function
+
+- In the case of a regular function the 'this' keyword also refers to the global window object.
+
+        function mohit(){
+              console.log("Mohit")
+              console.log(this)
+        }
+
+        mohit();
+
+       // mohit
+       /* Window { window: Window, self: Window,
+          document: document, name: '', location: Location..., ...}
+
+3. Used in Object Method
+
+- Function within an object is called Method. In such a case, the 'this' keyword refers to the object itself.
+
+        const about = {
+          name: "Mohit",
+          age: 21,
+          more(){
+              const country = "India"
+              console.log(country);
+              console.log(this);
+          }
+       }
+
+       about.more()
+
+       // India
+      // { name: 'Mohit', age: 21 }
+
+4. Regular Function Strict Mode
+
+- If you are using strict mode, the 'this' keyword used in the regular function will be undefined.
+
+          "use strict"
+
+          function mohit(){
+              console.log("Mohit")
+              console.log(this)
+          }
+
+          mohit()
