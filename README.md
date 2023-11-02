@@ -225,3 +225,58 @@ The 'this' keyword has different values depending upon its use.
           }
 
           mohit()
+
+# Array Destructuring
+
+- In simple words, destructuring means to break down a complex structure into smaller parts.
+- Destructuring in Js is a simplified method for extracting multiple properties from an array.
+- The concept of destructuring is widely used in a React App.
+
+Before Destructuring 
+
+ - Before Array Destructuring, If we wanted to extract data from arrays we had to define one variable for a separate array index.
+
+        const lang = ['JavaScript', 'Python', 'Java', 'Rust'];
+
+        const easy = lang[0];
+        const supereasy = lang[1];
+        const hard = lang[2];
+        const superhard = lang[3];
+
+        console.log(easy, supereasy, hard, superhard);
+        // output -> JavaScript Python Java Rust
+
+Using Destructuring 
+
+- We can reduce the hectic work of storing eash array index separately by using the concept of destructuring.
+
+        const lang = ['JavaScript', 'Python', 'Java', 'Rust'];
+
+        // Array Destructuring
+        const [easy, supereasy, hard, superhard] = lang;
+
+        // Arrays are index based so the order of the variables matter.
+        // 0 (easy) 1 (supereasy) 2 (hard) 3 (superhard)
+
+        console.log(easy, supereasy, hard, superhard);
+        // output -> JavaScript Python Java Rust
+
+Syntax
+
+- We can not use numbers for destructuring, numbers will throw an error because numbers can not be variables.
+  
+        const lang = ['JavaScript', 'Python', 'Java', 'Rust'];
+
+        const [1,2,3,4] = lang;
+    
+        // output -> Invalid destructuring assignment target.
+
+- We can also skip a variable by using comma.
+
+        const lang = ['JavaScript', 'Python', 'Java', 'Rust'];
+
+        // Array destructuring
+        const [easy, ,hard, superhard] = lang;
+
+        console.log(easy, hard, superhard)
+        // output -> JavaScript Java Rust
