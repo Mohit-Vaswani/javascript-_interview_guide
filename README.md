@@ -280,3 +280,12 @@ Syntax
 
         console.log(easy, hard, superhard)
         // output -> JavaScript Java Rust
+
+# String Methods
+
+    const text = "Hello, I am Mohit";
+    console.log(text.length) // 17
+    console.log(text.toUpperCase()); // HELLO, I AM MOHIT
+    console.log(text.indexOf("Mohit")) // 12
+    console.log(text.slice(7, 12)); // I am
+    console.log(text.replace("Hello", "Hi")) // Hi, I am Mohit
