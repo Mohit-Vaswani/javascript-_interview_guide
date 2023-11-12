@@ -289,3 +289,36 @@ Syntax
     console.log(text.indexOf("Mohit")) // 12
     console.log(text.slice(7, 12)); // I am
     console.log(text.replace("Hello", "Hi")) // Hi, I am Mohit
+
+
+# Array Methods
+
+.forEach()
+
+- Executes a provided function once for each array element.
+
+      const emojis = ['🤣', '🥲', '🥹'];
+
+      emojis.forEach(emoji => {
+      console.log(`I love ${emoji}`);
+      }
+
+      // Console
+      I love 🤣
+      I love 🥲
+      I love 🥹
+
+.map()
+
+- Creates a new array populated with the results of calling a provided function on every element.
+
+        const emojis = ['👽', '🎃', '🤖'];
+
+        const result = emojis.map(emoji => {
+            return emoji + emoji
+        })
+
+        console.log(result)
+
+        // Console
+        ['👽👽', '🎃🎃', '🤖🤖']
