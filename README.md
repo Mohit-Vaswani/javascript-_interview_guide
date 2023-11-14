@@ -290,6 +290,44 @@ Syntax
     console.log(text.slice(7, 12)); // I am
     console.log(text.replace("Hello", "Hi")) // Hi, I am Mohit
 
+# Array Methods
+
+    const numbers = [1, 2, 3, 4, 5];
+    console.log(numbers.length) // 5
+    console.log(numbers.join("-") // "1-2-3-4-5"
+    console.log(numbers.indexOf(3)) // 2
+    console.log(numbers.slice(1,3)) // [2, 3]
+    console.log(numbers.map(num => num * 2)) // [2, 4, 6, 8, 10]
+
+# Object Methods
+
+    const person = { name: "Mohit", age: 21 }
+    const keys = Object.keys(person); // ["name", "age"]
+    const value = Object.values(person); // ["Mohit", 21]
+    const entries = Object.entries(person); // [["name", "Mohit"], ["age", 21]]
+    const hasName = Object.hasOwnProperty("name"); // true
+
+# Date Methods
+
+    const currentDate = new Date();
+    console.log(currentDate.getFullYear()) // Current Year
+    console.log(currentDate.getMonth()) // Current month
+    console.log(currentDate.getDay()) // Current day of the month
+    console.log(currentDate.getHours()) // Current hour
+    console.log(currentDate.getMinutes()) // Current minute
+
+# Math functions
+
+    console.log(Math.random()) // Random number between 0 - 1
+    console.log(Math.round(3.7)) // 4
+    console.log(Math.floor(5.9)) // 5 ( rounds down value )
+    console.log(Math.max(3, 7, 1, 9)) // 9
+    console.log(Math.sqrt(16)) // 4
+    console.log(Math.abs(-5)) // 5 ( absolute value )
+    console.log(Math.pow(2, 3)) // 8 ( 2 raised to the power 3 )
+    console.log(Math.ceil(2.1)) // 3 ( rounds up value )
+    console.log(Math.min(3, 7, 1, 9)) // 3 ( smallest number )
+    
 
 # Array Methods
 
