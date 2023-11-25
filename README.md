@@ -327,6 +327,76 @@ Syntax
     console.log(Math.pow(2, 3)) // 8 ( 2 raised to the power 3 )
     console.log(Math.ceil(2.1)) // 3 ( rounds up value )
     console.log(Math.min(3, 7, 1, 9)) // 3 ( smallest number )
+
+# some() & every()
+
+Array.some()
+
+- The some( method was introduced in ES6 version of JavaScript. This method checks whether at least one of the elements of an array satisfies the given condition.
+
+Syntax
+
+        let numbers = [2, 3, 4, 5, 6, 7, 23];
+
+        numbers.some(callback func, this)
+
+Parameters
+
+- Callback func, the function that works on every element in an array. This callback func takes following arguments.
+- Current element, the element being passed from the array.
+- this, which is an optional parameter
+
+The some() method returns
+
+- true, if one of the elements of the array passes the given test function.
+- false, if no element of the array satisfies the condition.
+
+Example
+
+        let numbers = [2, 3, 4, 5, 6, 7, 23];
+        let smallNum = numbers.some((item) => item > 10);
+
+        console.log(smallNum) // true
+
+The some() will return true if one of the elements of the array passes the given test function.
+
+
+Array.every()
+
+- The every() method was introduced in ES6 version of JavaScript, it does the following things.
+- Loops over the element from left to right.
+- For each iteration, it calls the given function with the current array element as its 1st argument.
+- The loop continues until the function returns a falsy value.
+
+Syntax 
+
+    let numbers = [2, 3, 4, 5, 6, 7, 23];
+    let bigNumbers = numbers.every(callBack(currentValue), this);
+
+Parameters
+
+- Callback func, the function that works on every element in an array. This callback func takes following arguments.
+- Current element, the element being passed from the array.
+- this, which is an optional parameter
+
+The some() method returns
+
+- true, if all the elements of the array pass the given test function.
+- false, if any element of the array fails the given test function.
+
+Example
+
+        let numbers = [2, 3, 4, 5, 6, 7, 23];
+        let bigNumbers = numbers.every((item) => item > 1);
+
+        console.log(bigNumbers) // true
+
+        let smallNumber = number.every((item) => {
+            return item < 10;
+        })
+        console.log(smallNumber); // false
+
+The some() will return true if one of the elements of the array passes the given test function.
     
 
 # Array Methods
